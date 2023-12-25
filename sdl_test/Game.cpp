@@ -162,15 +162,6 @@ void Game::render(int tick) {
 	for (size_t x = 0; x < fieldSize; x++) {
 		for (size_t y = 0; y < fieldSize; y++) {
 			
-			activeField.x = (x * activeField.w) + fieldSize * activeField.w - (WINDOW_WIDTH / 2 * zoom) + (WINDOW_WIDTH / 2) - camera.x / 2 * zoom;
-			activeField.y = (y * activeField.w) + fieldSize * activeField.w - (WINDOW_HEIGTH / 2 * zoom) + (WINDOW_HEIGTH / 2) + camera.y / 2 * zoom;
-
-			activeField.x = (x * activeField.w) - (WINDOW_WIDTH / 2 * zoom) + (WINDOW_WIDTH / 2) - camera.x / 2 * zoom;
-			activeField.y = (y * activeField.w) - (WINDOW_HEIGTH / 2 * zoom) + (WINDOW_HEIGTH / 2) + camera.y / 2 * zoom;
-
-			activeField.x = (x * activeField.w) + (WINDOW_WIDTH / 2) + (fieldSize * zoom) - (camera.x * zoom);
-			activeField.y = (y * activeField.w) + (WINDOW_HEIGTH / 2) + (fieldSize * zoom) + (camera.y * zoom);
-
 			activeField.x = (x * activeField.w) + (WINDOW_WIDTH / 2) - (camera.x * zoom);
 			activeField.y = (y * activeField.w) + (WINDOW_HEIGTH / 2) + (camera.y * zoom);
 
